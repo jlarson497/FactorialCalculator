@@ -34,12 +34,13 @@
             this.txtFactorial = new System.Windows.Forms.TextBox();
             this.btnCalculate = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Location = new System.Drawing.Point(12, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 13);
             this.label1.TabIndex = 0;
@@ -48,7 +49,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(40, 42);
+            this.label2.Location = new System.Drawing.Point(39, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 1;
@@ -56,14 +57,14 @@
             // 
             // txtNumber
             // 
-            this.txtNumber.Location = new System.Drawing.Point(100, 13);
+            this.txtNumber.Location = new System.Drawing.Point(99, 38);
             this.txtNumber.Name = "txtNumber";
             this.txtNumber.Size = new System.Drawing.Size(25, 20);
             this.txtNumber.TabIndex = 2;
             // 
             // txtFactorial
             // 
-            this.txtFactorial.Location = new System.Drawing.Point(100, 40);
+            this.txtFactorial.Location = new System.Drawing.Point(99, 65);
             this.txtFactorial.Name = "txtFactorial";
             this.txtFactorial.ReadOnly = true;
             this.txtFactorial.Size = new System.Drawing.Size(138, 20);
@@ -72,7 +73,7 @@
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(16, 72);
+            this.btnCalculate.Location = new System.Drawing.Point(15, 97);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(75, 23);
             this.btnCalculate.TabIndex = 4;
@@ -83,13 +84,22 @@
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(163, 72);
+            this.btnExit.Location = new System.Drawing.Point(162, 97);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "&Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(135, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Joseph Larson (P5.1, P7.1)";
             // 
             // Form1
             // 
@@ -98,6 +108,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(266, 126);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.txtFactorial);
@@ -105,7 +116,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Factorial Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,6 +130,7 @@
         private System.Windows.Forms.TextBox txtFactorial;
         private System.Windows.Forms.Button btnCalculate;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label label3;
     }
 }
 

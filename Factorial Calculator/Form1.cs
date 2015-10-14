@@ -51,6 +51,7 @@ namespace Factorial_Calculator
             long result = CalculateFactorial(number);
 
             txtFactorial.Text = Convert.ToString(result);
+            txtNumber.Clear();
             txtNumber.Focus();
         }
 
