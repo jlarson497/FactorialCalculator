@@ -41,18 +41,26 @@ namespace Factorial_Calculator
         //click event handler for the calculate button
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            if (!IsValidForm()) 
+            try
             {
-                txtFactorial.Clear();
-                return;
+                if (!IsValidForm())
+                {
+                    txtFactorial.Clear();
+                    return;
+                }
+                long number = long.Parse(txtNumber.Text);
+
+                long result = CalculateFactorial(number);
+
+                txtFactorial.Text = Convert.ToString(result);
+                txtNumber.Clear();
+                txtNumber.Focus();
             }
-            long number = long.Parse(txtNumber.Text);
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + "\n\n" + ex.GetType().ToString() + "\n" + ex.StackTrace, "Exception");
+            }
 
-            long result = CalculateFactorial(number);
-
-            txtFactorial.Text = Convert.ToString(result);
-            txtNumber.Clear();
-            txtNumber.Focus();
         }
 
         //Range validation
